@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link href="/styles.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@mui/material@5.3.1/files/umd/material-ui.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel" src="weather.js"></script>
+        <h2><a href="https://weather.com/weather/today/l/Philadelphia+PA?canonicalCityId=aa0f46aff5c7ee96eb5fdea10c53c77c9578eb071854d7f04ae0a7aa517772ab">PHILADELPHIA</a></h2>
+        
+        <div id="weather"></div> 
+
+        <div id = "week-ahead">
+            <h3>WEATHER FOR THE WEEK</h3>
+            <table>
+                <tr>
+                  <td>Today</td>
+                  <td><img class="icon-S" src="/assets/cloudy.png" /></td>
+                  <td></td>
+                  <td>30˚</td>
+                  <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                  <td>50˚</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td><img class="icon-S" src="/assets/sunny.png" /></td>
+                    <td></td>
+                    <td>20˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>30˚</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td><img class="icon-S" src="/assets/partlycloudy.png" /></td>
+                    <td></td>
+                    <td>35˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>45˚</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td class="chance"><img class="icon-S" src="/assets/rain.ico" /> 80%</td>
+                    <td></td>
+                    <td>30˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>50˚</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td class="chance"><img class="icon-S" src="/assets/snow.png" /> 50%</td>
+                    <td></td>
+                    <td>20˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>25˚</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td><img class="icon-S" src="/assets/sunny.png" /></td>
+                    <td></td>
+                    <td>10˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>31˚</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td><img class="icon-S" src="/assets/cloudy.png" /></td>
+                    <td></td>
+                    <td>15˚</td>
+                    <td><img class="bar-icon" src="/assets/red+blue+gradient.jpg"/></td>
+                    <td>25˚</td>
+                </tr>
+              </table>
+        </div>
+        
+        <div id = "other-info">
+            <div class = "tab">
+                <h3>Precipitation</h3>
+                <div class = button style="background-color:#278cba">
+                    <p>50%</p>
+                </div>
+            </div>
+            <div class = "tab">
+                <h3>Air Quality</h3>
+                <div class = button style="background-color: #349960;">
+                    <p>55</p>
+                </div>
+            </div>
+            <div class = "tab">
+                <h3>Humidity</h3>
+                <div class = button style="background-color: #ba4b2d;">
+                    <p>90%</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
